@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Category from "../screens/Category";
+import Localization from "../screens/Location";
 
 
 
@@ -34,6 +35,15 @@ const TabRoutes = () => {
       <Tab.Screen name="Category" component={Category}
         options={{
           tabBarLabel: 'Category',
+          tabBarIcon: ({ focused }) => {
+            return <MaterialCommunityIcons name="format-list-bulleted" color={"#131313"} size={24} />;
+          }
+        }}
+
+      />
+      <Tab.Screen name="Localization" component={Localization}
+        options={{
+          tabBarLabel: 'Loclização',
           tabBarIcon: ({ focused }) => {
             return <MaterialCommunityIcons name="format-list-bulleted" color={"#131313"} size={24} />;
           }
