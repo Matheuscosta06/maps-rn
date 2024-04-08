@@ -77,6 +77,7 @@ export default function Localization() {
     <View style={styles.container}>
       <Title title={'Localization'} />
       {location && (
+        
         <AnimatedMapView
           ref={mapRef}
           style={styles.map}
@@ -95,7 +96,9 @@ export default function Localization() {
             title="Você está aqui"
             description="Sua localização atual"
           />
+          
         </AnimatedMapView>
+        
       )}
 
 
